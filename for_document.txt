@@ -1,0 +1,7 @@
+~/kafka/bin/kafka-topics.sh --create --topic streaming-data --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1  /This will create a topic to kafka
+python producer.py --bootstrap-servers localhost:9092 --topic streaming-data --rate 1   /code for running the producer with kafka installed on home directory
+
+python3 -m venv .venv - Creating Environment on VSCode, Arch Linux
+source .venv/bin/activate - after creation, activate it
+Press Ctl + Shift + P to run the python terminal: select interpreter
+
